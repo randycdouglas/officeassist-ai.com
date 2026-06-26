@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OfficeAssist AI — AI-Powered Field Service Management</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; background: #fff; }
+
+    /* NAV */
+    nav { display: flex; justify-content: space-between; align-items: center;
+          padding: 1.2rem 2rem; background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+    .logo { font-size: 1.4rem; font-weight: 700; color: #2e7d32; text-decoration: none; }
+    .nav-cta { background: #2e7d32; color: #fff; padding: .55rem 1.3rem; border-radius: 6px;
+               text-decoration: none; font-weight: 600; font-size: .95rem; }
+    .nav-cta:hover { background: #1b5e20; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+            padding: 5rem 2rem 4rem; text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; color: #1b5e20; line-height: 1.2; }
+    .hero p  { max-width: 640px; margin: 1.2rem auto 2rem; font-size: 1.15rem; color: #444; line-height: 1.7; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #2e7d32; color: #fff; padding: .8rem 2rem; border-radius: 8px;
+                   text-decoration: none; font-weight: 700; font-size: 1rem; }
+    .btn-primary:hover { background: #1b5e20; }
+    .btn-secondary { border: 2px solid #2e7d32; color: #2e7d32; padding: .8rem 2rem; border-radius: 8px;
+                     text-decoration: none; font-weight: 700; font-size: 1rem; }
+    .btn-secondary:hover { background: #e8f5e9; }
+
+    /* FEATURES */
+    .section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
+    .section h2 { font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: .5rem; color: #1b5e20; }
+    .section-sub { text-align: center; color: #666; margin-bottom: 3rem; font-size: 1.05rem; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: #f9fbe7; border: 1px solid #dcedc8; border-radius: 12px; padding: 1.8rem; }
+    .card-icon { font-size: 2rem; margin-bottom: .8rem; }
+    .card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; color: #1b5e20; }
+    .card p  { font-size: .95rem; color: #555; line-height: 1.6; }
+
+    /* SMS CONSENT */
+    .consent-section { background: #f5f5f5; padding: 4rem 2rem; }
+    .consent-inner { max-width: 760px; margin: 0 auto; }
+    .consent-inner h2 { font-size: 1.5rem; font-weight: 700; color: #1b5e20; margin-bottom: 1rem; }
+    .consent-inner p, .consent-inner li { font-size: .95rem; color: #444; line-height: 1.8; }
+    .consent-inner ul { padding-left: 1.4rem; margin-top: .5rem; }
+
+    /* DEMO FORM */
+    .demo-section { background: #e8f5e9; padding: 4rem 2rem; text-align: center; }
+    .demo-section h2 { font-size: 2rem; font-weight: 700; color: #1b5e20; margin-bottom: .5rem; }
+    .demo-section p  { color: #555; margin-bottom: 2rem; }
+    form { display: flex; flex-direction: column; gap: 1rem; max-width: 480px; margin: 0 auto; text-align: left; }
+    input, textarea, select { padding: .75rem 1rem; border: 1px solid #ccc; border-radius: 8px;
+                               font-size: 1rem; width: 100%; }
+    .submit-btn { background: #2e7d32; color: #fff; padding: .85rem; border: none; border-radius: 8px;
+                  font-size: 1rem; font-weight: 700; cursor: pointer; }
+    .submit-btn:hover { background: #1b5e20; }
+    .or-call { margin-top: 1rem; color: #555; font-size: .95rem; }
+    .or-call a { color: #2e7d32; font-weight: 700; text-decoration: none; }
+
+    /* FOOTER */
+    footer { background: #1b5e20; color: #c8e6c9; padding: 2rem; text-align: center; font-size: .9rem; }
+    footer a { color: #a5d6a7; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="#">🌿 OfficeAssist AI</a>
+  <a class="nav-cta" href="#demo">Request a Demo</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>AI-Powered Office Management<br/>for Field Service Businesses</h1>
+  <p>OfficeAssist AI helps HVAC, plumbing, and home service companies automate scheduling,
+     dispatching, invoicing, and customer follow-up — powered by AI voice and SMS.</p>
+  <div class="hero-btns">
+    <a class="btn-primary" href="#demo">Request a Demo</a>
+    <a class="btn-secondary" href="tel:+19858709280">Call (985) 870-9280</a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<div class="section">
+  <h2>Everything Your Office Needs</h2>
+  <p class="section-sub">One platform. Less overhead. Happier customers.</p>
+  <div class="features">
+
+    <div class="card">
+      <div class="card-icon">🎙️</div>
+      <h3>AI Voice Notes</h3>
+      <p>Technicians record voice notes in the field. Our AI transcribes, summarizes, and
+         auto-generates a customer-ready email and invoice draft instantly.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">💬</div>
+      <h3>Conversational SMS Intake</h3>
+      <p>Inbound text messages are handled by an AI assistant that collects the customer's
+         name, address, issue, and preferred time — no human needed.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">📅</div>
+      <h3>Appointment Scheduling</h3>
+      <p>Schedule, confirm, and remind customers automatically via SMS and email.
+         Syncs with Google Calendar to keep your team aligned.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>Job & Invoice Management</h3>
+      <p>Track every job from draft to completed. Generate professional invoices and
+         send Stripe payment links directly to customers via text.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">💳</div>
+      <h3>Stripe Payment Integration</h3>
+      <p>Send payment links by SMS. Jobs are automatically marked paid when
+         the customer completes checkout — no manual follow-up needed.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🔔</div>
+      <h3>6-Month Maintenance Reminders</h3>
+      <p>Automatically re-engage past customers with a maintenance reminder SMS
+         6 months after their last completed job.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">⭐</div>
+      <h3>Automated Review Requests</h3>
+      <p>After every completed job, customers receive a friendly SMS asking for a
+         Google review — driving your online reputation on autopilot.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Revenue Dashboard</h3>
+      <p>Real-time dashboard showing open jobs, revenue, completed work, upcoming
+         appointments, and customer trends — all in one view.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🏢</div>
+      <h3>Multi-Tenant SaaS</h3>
+      <p>Built for agencies and multi-location businesses. Each tenant gets their own
+         isolated data, branding, and Twilio/Stripe configuration.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- SMS CONSENT (required by Twilio for toll-free verification) -->
+<section class="consent-section" id="sms-terms">
+  <div class="consent-inner">
+    <h2>SMS Messaging Terms &amp; Consent</h2>
+    <p>By providing your phone number to OfficeAssist AI or to any business powered by
+       OfficeAssist AI, you agree to receive transactional and informational SMS messages,
+       which may include:</p>
+    <ul>
+      <li>Appointment confirmations and reminders</li>
+      <li>Job status updates and technician notifications</li>
+      <li>Invoice and payment links</li>
+      <li>Maintenance reminder notices</li>
+      <li>Review request messages after completed service</li>
+    </ul>
+    <p style="margin-top:1rem;">
+      Message and data rates may apply. Message frequency varies.
+      Reply <strong>STOP</strong> at any time to unsubscribe.
+      Reply <strong>HELP</strong> for help.
+      For support, contact us at
+      <a href="mailto:support@officeassist-ai.com">support@officeassist-ai.com</a>
+      or call <a href="tel:+19858709280">(985) 870-9280</a>.
+    </p>
+    <p style="margin-top:1rem;">
+      View our full <a href="#privacy">Privacy Policy</a> and
+      <a href="#terms">Terms of Service</a> below.
+    </p>
+  </div>
+</section>
+
+<!-- DEMO REQUEST FORM -->
+<section class="demo-section" id="demo">
+  <h2>Request a Demo</h2>
+  <p>See OfficeAssist AI in action. We'll walk you through everything live.</p>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text"   name="name"    placeholder="Your name"         required />
+    <input type="email"  name="email"   placeholder="Email address"     required />
+    <input type="tel"    name="phone"   placeholder="Phone number"      />
+    <input type="text"   name="company" placeholder="Company name"      />
+    <select name="service">
+      <option value="">Type of business...</option>
+      <option>HVAC</option>
+      <option>Plumbing</option>
+      <option>Electrical</option>
+      <option>General Contracting</option>
+      <option>Other Home Services</option>
+    </select>
+    <textarea name="message" rows="3" placeholder="Anything you'd like us to know?"></textarea>
+    <button type="submit" class="submit-btn">Request My Demo</button>
+  </form>
+  <p class="or-call">Or call us directly: <a href="tel:+19858709280">(985) 870-9280</a></p>
+</section>
+
+<!-- PRIVACY & TERMS (minimal, required for Twilio) -->
+<section class="section" id="privacy">
+  <h2>Privacy Policy</h2>
+  <p class="section-sub" style="text-align:left; margin-bottom:1rem;">
+    OfficeAssist AI ("<strong>we</strong>", "<strong>us</strong>") collects contact information
+    (name, email, phone) submitted through this site or through businesses powered by our platform.
+    We use this information solely to provide the requested services and to send transactional
+    communications. We do not sell your personal information to third parties.
+    Data is stored securely and retained only as long as necessary to deliver our services.
+    For questions, email <a href="mailto:support@officeassist-ai.com">support@officeassist-ai.com</a>.
+  </p>
+</section>
+
+<section class="section" id="terms" style="padding-top:0;">
+  <h2>Terms of Service</h2>
+  <p class="section-sub" style="text-align:left; margin-bottom:1rem;">
+    Use of OfficeAssist AI is subject to our standard terms. The platform is provided as-is for
+    business use by authorized tenants. Misuse, including sending unsolicited messages or violating
+    carrier guidelines, will result in immediate termination of service.
+    By using our platform or receiving messages from a business powered by OfficeAssist AI,
+    you agree to these terms.
+    Contact <a href="mailto:support@officeassist-ai.com">support@officeassist-ai.com</a> with any concerns.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 OfficeAssist AI — Douglas Property Developments, LLC</p>
+  <p style="margin-top:.5rem;">
+    <a href="#sms-terms">SMS Terms</a> &nbsp;·&nbsp;
+    <a href="#privacy">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="#terms">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="tel:+19858709280">(985) 870-9280</a> &nbsp;·&nbsp;
+    <a href="mailto:support@officeassist-ai.com">support@officeassist-ai.com</a>
+  </p>
+</footer>
+
+</body>
+</html>
