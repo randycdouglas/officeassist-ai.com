@@ -205,8 +205,20 @@
     <input type="email" name="email"   placeholder="Email address"     required data-fs-field />
     <span data-fs-error="email"></span>
 
-    <input type="tel"   name="phone"   placeholder="Phone number" />
-    <input type="text"  name="company" placeholder="Company name" />
+    <input type="tel" name="phone" placeholder="Phone number" />
+
+    <label style="display:flex; gap:.6rem; align-items:flex-start; font-size:.85rem; line-height:1.5; color:#444;">
+      <input type="checkbox" name="sms_consent" value="yes" style="width:auto; margin-top:.25rem;" />
+      <span>
+        I agree to receive SMS messages from OfficeAssist AI regarding my inquiry,
+        appointments, technician arrival notifications, customer support, invoices,
+        and account updates. Message frequency varies. Message and data rates may apply.
+        Reply STOP to opt out and HELP for assistance. Consent is not a condition of purchase.
+        View our <a href="#privacy">Privacy Policy</a> and <a href="#terms">Terms of Service</a>.
+      </span>
+    </label>
+    
+    <input type="text" name="company" placeholder="Company name" />
 
     <select name="service">
       <option value="">Type of business...</option>
